@@ -11,7 +11,8 @@ import { toast } from 'react-toastify';
 
 const RegisterScreen = () => {
   const [name, setName] = useState('');
-  const [isSeller, setisSeller] = useState('');
+  //const [isSeller, setisSeller] = useState('');
+  const [isSeller, setisSeller] = useState(false);
   const [lastname, setLastName] = useState('');
   const [mobile, setMobile] = useState('');
   const [SSN, setSSN] = useState('');
@@ -61,22 +62,14 @@ const RegisterScreen = () => {
     <FormContainer>
       <h1>Register</h1>
       <Form onSubmit={submitHandler}>
-      <Form.Group className='my-2' controlId='name'>
-          <Form.Label>isSeller</Form.Label>
-          <Form.Control
-           as='select'
-           value={isSeller}
-           placeholder='IsSeller?'
-           onChange={(e) => setisSeller(e.target.value)}
-           >
-           <option
-            id="1" value="false" selected="selected"
-           >No</option>
-           <option
-            id="2" value="true"
-           >Yes</option>
-          </Form.Control>
-        </Form.Group>
+      <Form.Group className='my-2' controlId='isSeller'>
+      <Form.Check
+        type='checkbox'
+        label='Are you a seller?'
+        checked={isSeller}
+        onChange={(e) => setisSeller(e.target.checked)}
+      />
+    </Form.Group>
 
         <Form.Group className='my-2' controlId='name'>
           <Form.Label>First Name</Form.Label>
