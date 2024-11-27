@@ -72,7 +72,7 @@ const RegisterScreen = () => {
     </Form.Group>
 
         <Form.Group className='my-2' controlId='name'>
-          <Form.Label>First Name</Form.Label>
+          <Form.Label>First Name <span className='required'>*</span></Form.Label>
           <Form.Control
             type='name'
             placeholder='Enter name'
@@ -82,7 +82,7 @@ const RegisterScreen = () => {
         </Form.Group>
 
         <Form.Group className='my-2' controlId='name'>
-          <Form.Label>Last Name</Form.Label>
+          <Form.Label>Last Name <span className='required'>*</span></Form.Label>
           <Form.Control
             type='name'
             placeholder='Enter last name'
@@ -92,7 +92,7 @@ const RegisterScreen = () => {
         </Form.Group>
 
         <Form.Group className='my-2' controlId='name'>
-          <Form.Label>Mobile</Form.Label>
+          <Form.Label>Mobile <span className='required'>*</span></Form.Label>
           <Form.Control
             type='name'
             placeholder='Enter mobile'
@@ -102,7 +102,7 @@ const RegisterScreen = () => {
         </Form.Group>
 
         <Form.Group className='my-2' controlId='name'>
-          <Form.Label>SSN</Form.Label>
+          <Form.Label>SSN <span className='required'>*</span></Form.Label>
           <Form.Control
             type='name'
             placeholder='Enter SSN'
@@ -112,7 +112,7 @@ const RegisterScreen = () => {
         </Form.Group>
 
         <Form.Group className='my-2' controlId='address'>
-          <Form.Label>Address</Form.Label>
+          <Form.Label>Address <span className='required'>*</span></Form.Label>
           <Form.Control
             type='text'
             placeholder='Enter address'
@@ -123,7 +123,7 @@ const RegisterScreen = () => {
         </Form.Group>
 
         <Form.Group className='my-2' controlId='city'>
-          <Form.Label>City</Form.Label>
+          <Form.Label>City <span className='required'>*</span></Form.Label>
           <Form.Control
             type='text'
             placeholder='Enter city'
@@ -134,7 +134,7 @@ const RegisterScreen = () => {
         </Form.Group>
 
         <Form.Group className='my-2' controlId='postalCode'>
-          <Form.Label>Postal Code</Form.Label>
+          <Form.Label>Postal Code <span className='required'>*</span></Form.Label>
           <Form.Control
             type='text'
             placeholder='Enter postal code'
@@ -145,7 +145,7 @@ const RegisterScreen = () => {
         </Form.Group>
 
         <Form.Group className='my-2' controlId='country'>
-          <Form.Label>Country</Form.Label>
+          <Form.Label>Country <span className='required'>*</span></Form.Label>
           <Form.Control
             type='text'
             placeholder='Enter country'
@@ -158,7 +158,7 @@ const RegisterScreen = () => {
         
 
         <Form.Group className='my-2' controlId='email'>
-          <Form.Label>Email Address</Form.Label>
+          <Form.Label>Email Address <span className='required'>*</span></Form.Label>
           <Form.Control
             type='email'
             placeholder='Enter email'
@@ -168,7 +168,7 @@ const RegisterScreen = () => {
         </Form.Group>
 
         <Form.Group className='my-2' controlId='password'>
-          <Form.Label>Password</Form.Label>
+          <Form.Label>Password <span className='required'>*</span></Form.Label>
           <Form.Control
             type='password'
             placeholder='Enter password'
@@ -177,7 +177,7 @@ const RegisterScreen = () => {
           ></Form.Control>
         </Form.Group>
         <Form.Group className='my-2' controlId='confirmPassword'>
-          <Form.Label>Confirm Password</Form.Label>
+          <Form.Label>Confirm Password<span className='required'>*</span></Form.Label>
           <Form.Control
             type='password'
             placeholder='Confirm password'
